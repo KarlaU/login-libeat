@@ -1,0 +1,179 @@
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 1s;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 1s;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+body{
+  background-color: #B5488B;
+  font-family: 'Nunito', sans-serif;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+.ingreso-face{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  border:solid 1px white;
+  padding: 15px 25px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.contenedor-botones{
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -148.5px;
+}
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.item div{
+  background-image:url("../img/fondo-violeta-08.png");
+  background-position: center;
+  height: 100%;
+  width:100%;
+  opacity: .95;
+}
+.item div p{
+  display: block;
+  max-width: 250px;
+  font-weight: lighter;
+  font-size: 18px;
+}
+.vertical-centered-text {
+  -ms-display: flex;
+  display: flex;
+  /* alineacion vertical */
+  align-items: center;
+   /* alineacion horizontal */
+  justify-content: center;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+}
+figure p{
+  margin-top: 20px;
+  color: white;
+}
+.animated { 
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+} 
+
+@-webkit-keyframes fadeInUp { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateY(20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+    } 
+} 
+
+@keyframes fadeInUp { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+} 
+
+.fadeInUp { 
+    -webkit-animation-name: fadeInUp; 
+    animation-name: fadeInUp; 
+}
+.animated { 
+    -webkit-animation-duration: 0.7s; 
+    animation-duration: 0.7s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: ease-in-out; 
+    animation-timing-function: ease-in-out; 
+} 
+
+@-webkit-keyframes wobble { 
+  0% { -webkit-transform: translateX(0%); } 
+  15% { -webkit-transform: translateX(-25%) rotate(-5deg); } 
+  30% { -webkit-transform: translateX(20%) rotate(3deg); } 
+  45% { -webkit-transform: translateX(-15%) rotate(-3deg); } 
+  60% { -webkit-transform: translateX(10%) rotate(2deg); } 
+  75% { -webkit-transform: translateX(-5%) rotate(-1deg); } 
+  100% { -webkit-transform: translateX(0%); } 
+} 
+@keyframes wobble { 
+  0% { transform: translateX(0%); } 
+  15% { transform: translateX(-25%) rotate(-5deg); } 
+  30% { transform: translateX(20%) rotate(3deg); } 
+  45% { transform: translateX(-15%) rotate(-3deg); } 
+  60% { transform: translateX(10%) rotate(2deg); } 
+  75% { transform: translateX(-5%) rotate(-1deg); } 
+  100% { transform: translateX(0%); } 
+} 
+.wobble { 
+    -webkit-animation-name: wobble; 
+    animation-name: wobble; 
+}
+img{
+  width: 62px;
+  opacity: .9;
+  margin: 0 auto 0;
+  display: block;
+}
+.logo-blanco{
+  width: 141px;
+}
+.vertical-centered-text .primer-slide p{
+  font-size: 13px;
+  margin-top: 8px;
+  max-width: 156px;
+}
+.carousel-indicators{
+  display: none;
+}
+figure .icono-chico{
+  width: 30px;
+}
+.item:nth-child(1){
+   background-image: url("../img/imagen-intro-0.jpg");
+}
+.item:nth-child(2){
+   background-image: url("../img/imagen-intro-1.jpg");
+}
+.item:nth-child(3){
+  background-image: url("../img/imagen-intro-2.jpg");
+}
+.item:nth-child(4){
+  background-image: url("../img/imagen-intro-3.jpg");
+}
