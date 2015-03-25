@@ -28,6 +28,25 @@ body{
   color: white;
   text-align: center;
 }
+.animacion-sensual{
+  background-color: white;
+  color: #9a8f93;
+}
+.animacion-sensual div{
+  margin-top: 250px;
+}
+.animacion-sensual p{
+  margin: 20px auto 0;
+  max-width: 270px;
+}
+.animacion-sensual .cosito{
+  width: 300px;
+  z-index: 1000;
+}
+.animacion-sensual h1{
+  font-size: 27px;
+  margin-top: 40px;
+}
 .ingreso-face{
   text-transform: uppercase;
   letter-spacing: 1px;
