@@ -17,32 +17,34 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <style type="text/css">
           .animated { 
-                -webkit-animation-duration: 2s; 
-                animation-duration: 2s; 
+                -webkit-animation-duration: 5s; 
+                animation-duration: 5s; 
                 -webkit-animation-fill-mode: both; 
                 animation-fill-mode: both; 
             } 
 
             @-webkit-keyframes bounceOutUp { 
                 0% {-webkit-transform: translateY(0);} 
-                10% {-webkit-transform: translateY(0);} 
-                20% {-webkit-transform: translateY(-30px);} 
+                5% {-webkit-transform: translateY(0);} 
+                10% {-webkit-transform: translateY(-30px);} 
+                13% {-webkit-transform: translateY(0);} 
+                15% {-webkit-transform: translateY(-15px);}
+                20% {-webkit-transform: translateY(0);} 
                 25% {-webkit-transform: translateY(0);} 
-                30% {-webkit-transform: translateY(-15px);}
-                40% {-webkit-transform: translateY(0);} 
-                50% {-webkit-transform: translateY(0);} 
-                60% { opacity: 1; -webkit-transform: translateY(20px);} 
+                30% { opacity: 1; -webkit-transform: translateY(20px);} 
+                50% { opacity: 0; -webkit-transform: translateY(-2000px);} 
                 100% { opacity: 0; -webkit-transform: translateY(-2000px);} 
             } 
             @keyframes bounceOutUp { 
                 0% {transform: translateY(0);} 
-                10% {transform: translateY(0);} 
-                20% {transform: translateY(-30px);} 
+                5% {transform: translateY(0);} 
+                10% {transform: translateY(-30px);} 
+                13% {transform: translateY(0);} 
+                15% {transform: translateY(-15px);}
+                20% {transform: translateY(0);} 
                 25% {transform: translateY(0);} 
-                30% {transform: translateY(-15px);}
-                40% {transform: translateY(0);} 
-                50% {transform: translateY(0);} 
-                60% { opacity: 1; -webkit-transform: translateY(20px);} 
+                30% { opacity: 1; -webkit-transform: translateY(20px);} 
+                50% { opacity: 0; -webkit-transform: translateY(-2000px);} 
                 100% { opacity: 0; -webkit-transform: translateY(-2000px);} 
             } 
             .bounceOutUp { 
@@ -51,15 +53,37 @@
             }
             @-webkit-keyframes appear { 
                 0% { opacity: 0;} 
-                70% { opacity: 0;}
+                35% { opacity: 0;}
+                40% { opacity: .8;} 
+                45% { opacity: 4;} 
+                50% { opacity: .8;} 
+                55% { opacity: .4;} 
+                60% { opacity: .8;} 
+                65% { opacity: .4;} 
+                70% { opacity: .8;}  
+                75% { opacity: .4;} 
                 80% { opacity: .8;} 
+                85% { opacity: .4;} 
+                90% { opacity: .8;} 
+                95% { opacity: .4;}
                 100% { opacity: 0;} 
             } 
             @keyframes appear { 
                 0% { opacity: 0;} 
-                70% { opacity: 0;} 
+                35% { opacity: 0;}
+                40% { opacity: .8;} 
+                45% { opacity: 4;} 
+                50% { opacity: .8;} 
+                55% { opacity: .4;} 
+                60% { opacity: .8;} 
+                65% { opacity: .4;} 
+                70% { opacity: .8;}
+                75% { opacity: .4;} 
                 80% { opacity: .8;} 
-                100% { opacity: 0;} 
+                85% { opacity: .4;} 
+                90% { opacity: .8;} 
+                95% { opacity: .4;}
+                100% { opacity: 0;}   
             } 
             .appear { 
                 -webkit-animation-name: appear; 
