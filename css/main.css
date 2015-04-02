@@ -31,9 +31,27 @@ body{
 .animacion-sensual{
   background-color: white;
   color: #9a8f93;
+  max-width: 900px;
+  max-height: 900px;
+  overflow: hidden;
+  margin: 0 auto 0;
+}
+.animacion-sensual .ingreso-face{
+  margin-top:30px;
+  padding: 10px 20px;
+  width: 100px;
 }
 .animacion-sensual div{
   margin-top: 250px;
+}
+.animacion-sensual .oportunidad{
+  position: relative;
+  width: 56px;
+  height: 62px;
+  margin: 250px auto 0;
+}
+.animacion-sensual .oportunidad img{
+  position: absolute;
 }
 .animacion-sensual p{
   margin: 20px auto 0;
@@ -46,6 +64,11 @@ body{
 .animacion-sensual h1{
   font-size: 27px;
   margin-top: 40px;
+}
+.animacion-sensual .white{
+  color: white;
+  position: relative;
+  opacity: .9;
 }
 .ingreso-face{
   text-transform: uppercase;
