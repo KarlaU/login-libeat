@@ -36,6 +36,10 @@ body{
   overflow: hidden;
   margin: 0 auto 0;
 }
+.fondo-degradado{
+  background-image: url("../img/fondo-violeta-08.png");
+  background-size: cover;
+}
 .animacion-sensual .ingreso-face{
   margin-top:30px;
   padding: 10px 20px;
